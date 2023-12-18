@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:islami_app/home/HomeScreen.dart';
+import 'package:islami_app/mythems.dart';
 
 void main() {
   runApp(Mayapp());
-} 
+}
 
 class Mayapp extends StatelessWidget {
   @override
@@ -14,6 +15,7 @@ class Mayapp extends StatelessWidget {
       routes: {
         HomeScreen.routeName: (context) => HomeScreen(),
       },
+      theme: mythems.LightTheme,
     );
   }
 }
